@@ -6,12 +6,13 @@
 
 int main(int argc, char *argv[]) {
 	
-	char src[]="The worst things to eat before you sleep";
-	char dst[100];
+	char str[30]="Happy C language";
+	int i=0;
 	
-	strcpy(dst,src);
+	while (str[i]!=0)
+	i++;
 	
-	printf("copied string: %s",dst);
+	printf("string length \"%s\"¿« ±Ê¿Ã: %i",str,i);
 	
 	return 0;
 }
