@@ -6,13 +6,19 @@
 
 int main(int argc, char *argv[]) {
 	
-	char str[30]="Happy C language";
-	int i=0;
+	int i;
+	char input[100];
+	FILE *fp;
 	
-	while (str[i]!=0)
-	i++;
+	fp=fopen("sameple.txt","w");
+	for (i=0;i<3;i++)
+	{
+		printf("input a word:");
+		scanf("%s",input);
+		fprintf(fp,"%s\n",input);
+		
+	}
 	
-	printf("string length \"%s\"ÀÇ ±æÀÌ: %i",str,i);
-	
+	fclose(fp);
 	return 0;
 }
